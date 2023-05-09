@@ -1,0 +1,7 @@
+{
+    "workbench.settings.editor": "json",
+    "workbench.settings.enableNaturalLanguageSearch": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.useInlineCompletions": true,
+    "emmet.triggerExpansionOnTab": true
+}
