@@ -1,17 +1,19 @@
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+import mobile from '../Responsive'
 
 const Container = styled.div`
     flex:1;
     margin:5px;
-    min-width: 20vw;
+    /* min-width: 20vw; */
     height:350px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f5fbfd;
     position: relative;
+    ${mobile({flex:"1",height:"20vh",minWidth:"40%"} )};
 `
 const Circle = styled.div`
     width: 200px;
@@ -23,6 +25,8 @@ const Circle = styled.div`
 const Image = styled.img`
     height: 75%;
     z-index: 2;
+    ${mobile({height:"95%"} )};
+    object-fit: cover;
 `
 const Info = styled.div`
     opacity: 0;
@@ -64,7 +68,7 @@ const Icon = styled.div`
 const Product = ({item}) => {
   return (
     <Container>
-        <Circle></Circle>
+        {/* <Circle></Circle> */}
         <Image src={item.img}/>
         <Info>
             <Icon>

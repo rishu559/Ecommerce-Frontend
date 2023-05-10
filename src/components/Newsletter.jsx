@@ -2,6 +2,7 @@
 import { Send } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+import mobile from '../Responsive';
 
 const Container = styled.div`
     height: 60vh;
@@ -10,16 +11,20 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    ${mobile({height:"40vh"} )};
 `;
 const Title = styled.h1`
     margin:0;
     font-size: 70px;
     margin-bottom: 20px;
+    ${mobile({fontSize:"40px",marginBottom:"15px"} )};
 `;
 const Description = styled.p`
+    margin:0px;
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
+    ${mobile({fontSize:"18px",marginBottom:"15px",width:"80vw",textAlign:"center"} )};
 `;
 const InputContainer = styled.div`
     width: 50%;
@@ -29,7 +34,9 @@ const InputContainer = styled.div`
     /* border:1px solid gray; */
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
     gap: 5px;
+    
 `;
 const Input = styled.input`
     border:0.1px solid gray;

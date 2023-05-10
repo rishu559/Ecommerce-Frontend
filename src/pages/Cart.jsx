@@ -72,9 +72,14 @@ const ProductDetail = styled.div`
     padding: 20px;
     
 `
+const ImageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
 const Image = styled.img`
-    /* width: 200px; */
-    /* height:90%; */
+    width: 200px;
+    /* height:auto; */
 `
 const Details = styled.div`
     margin:0px 20px;
@@ -182,7 +187,9 @@ const Cart = () => {
                 <Info>
                     <Product>
                         <ProductDetail>
+                        <ImageContainer>
                             <Image src="https://rukminim1.flixcart.com/image/832/832/xif0q/shoe/d/m/z/-original-imagg7t26zdugnx8.jpeg?q=70"></Image>
+                            </ImageContainer>
                             <Details>
                                 <ProductName><b>Product: </b>JESSIE THUNDER SHOES</ProductName>
                                 <ProductID><b>ID: </b>9392929922</ProductID>
@@ -202,7 +209,9 @@ const Cart = () => {
                     <Hr></Hr>
                     <Product>
                         <ProductDetail>
-                            <Image src="https://rukminim1.flixcart.com/image/832/832/xif0q/sandal/s/0/l/10-380978grey-10-puma-quarry-dark-shadow-black-original-imaghfvte2rqcgt2.jpeg?q=70"></Image>
+                        <ImageContainer>
+                            <Image src="https://rukminim1.flixcart.com/image/832/832/xif0q/shoe/h/k/z/7-zm-2007-a-zixer-grey-original-imagpgqddrsxxbkh.jpeg?q=70"></Image>
+                            </ImageContainer>
                             <Details>
                                 <ProductName><b>Product: </b>Men Blitz Grey Sports Sandal</ProductName>
                                 <ProductID><b>ID: </b>9339739737</ProductID>
